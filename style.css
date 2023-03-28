@@ -6,6 +6,8 @@ body {
     color: #0d0200;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%
+    margin: 15px;
+    padding: 10px;
 }
 table, tr, th, td, caption {
     border: 1px solid;
