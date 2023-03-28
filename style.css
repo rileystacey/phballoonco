@@ -5,6 +5,7 @@ body {
     background-color: #e9cec3;
     color: #0d0200;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%
 }
 table, tr, th, td, caption {
     border: 1px solid;
