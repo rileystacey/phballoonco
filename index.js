@@ -1,14 +1,90 @@
-const gallery = document.querySelector('.gallery');
-const galleryWidth = gallery.offsetWidth;
-const images = gallery.querySelectorAll('img');
-let totalWidth = 0;
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Stacey Riley">
+        <meta name="description" content="PH Balloon Co Products">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PH Balloon Co Products</title>
+        <link rel="icon" href="phb_logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <h1>PHBC Balloon Co Products</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>                    
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="http://www.instagram.com/phballoonco">Instagram</a></li>
+                    <li><a href="http://www.facebook.com/phballoonco">Facebook</a></li>
+                </ul>
+            </nav>
+            <br><br>
+            <h2 style="display: flex; align-items: center; margin: auto;">
+                We're currently updating our product catalog, check back soon!
+            </h2>
 
-images.forEach(image => {
-  totalWidth += image.offsetWidth;
-  image.addEventListener('load', () => {
-    totalWidth += image.offsetWidth;
-    if (totalWidth > galleryWidth) {
-      gallery.style.width = totalWidth + 'px';
-    }
-  });
-});
+            <h3 id="#organics">Organics</h3>
+            <p>Organic balloon displays can be as wild and wonderful as you like. We can create any shape, fill any space, and cover any backdrop in your colour scheme and theme!</p>
+            <div class="gallery-container">
+                <div class="gallery">
+                  <img src="organicHalloweenGarland.jpg" alt="Organic Halloween Garland">
+                  <img src="organicBearHoop.png" alt="Small Organic Bear Hoop">
+                  <img src="organicsHeliumClustersHippy.jpg" alt="Table Centrepiece Helium Clusters">
+                  <img src="organicGarlandPinkGoldWhite.jpg" alt="Organic Grab and Go Garland">
+                </div>
+              </div>
+
+            <h3 id="#easel">Set Ups</h3> 
+            <p>We come to you and dress your venue! From full set ups where we take over a room, to simple and elegant welcome easels. All can be personalised to your theme, colour scheme and event.</p>
+            <div class="gallery-container">
+              <div class="gallery">
+                <img src="avaeasel.PNG" alt="Welcome Easel">
+                <img src="hoopAbeera.jpg" alt="Hoop, Number Stack and Balloon Boxes">
+                <img src="organicGarlandPinkGoldWhite.jpg" alt="Pink Gold GrabNGo Garland">
+              </div>
+            </div> 
+
+            <h3 id="#numberstacks">Number Stacks</h3>
+            <p>Stacks, bouquets, sculptures... they get a lot of names, but its a big number with a theme incorporated. If you can think it up, we can make it!</p>
+            <div class="gallery-container">
+                <div class="gallery">
+                  <img src="onePeppaAva.jpg" alt="IPeppa Pig Licensed Number Stack">
+                  <img src="fourUnicornEsther.jpg" alt="Unicorn Number Stack">
+                  <img src="fiftyRoseGoldLinda.jpg" alt="Rose Gold Number Stack">
+                  <img src="twentyFourChampagneBeth.jpg" alt="Champagne Number Stack">
+                  <img src="twoDinoJensen.jpg" alt="Dinosaur Number Stack">
+                </div>
+              </div>
+
+            <h3 id="#bubbles">Bubbles</h3>
+            <p>Bubbles are an ever popular choice. Available in a range of prints, or clear and filled with balloons, feathers, flowers, confetti, glitter, gold leaf... the list is endless. All are fully personalisable too!</p>
+            <div class="gallery-container">
+                <div class="gallery">
+                  <img src="bubbleChristeningAva.jpg" alt="Baby Boy Hatbox with Foil">
+                  <img src="bubbleBabyTheo.jpg" alt="Bubble Hatbox with Florals">
+                  <img src="bubblePurpleLeila.jpg" alt="Bubble Hatbox with Feathers">
+                  <img src="bubbleSeventyFiveRoseGold.jpg" alt="Baby Boy Hatbox with Foil">
+                  <img src="bubblePolaroidKasim.jpg" alt="Bubble Hatbox with Florals">
+                </div>
+              </div>
+            <h3 id="#hatbox">Hatboxes</h3>
+            <p>Hatboxes make a special keepsake. Filled with on theme tissue paper or florals and topped with a themed foil or bubble, they last for ages and are a completely self-contained precious gift!</p>
+            <div class="gallery-container">
+                <div class="gallery">
+                  <img src="hatboxBabyBlue.jpg" alt="Baby Boy Hatbox with Foil">
+                  <img src="hatboxGrandma.jpg" alt="Bubble Hatbox with Florals">
+                  <img src="hatboxSeventyGrandma.jpg" alt="Bubble Hatbox with Feathers">
+                  <img src="foilMothersDayHatbox.jpg" alt="Mothers Day Hatbox with Foil and Florals ">
+                </div>
+              </div>
+
+            <h3 id="#others">Others</h3>
+            <p>Check back soon to see what else we create!</p>
+        </body>
+        <footer>
+          <p>&lt;&copy;PH Balloon Co 2023&gt;</p>
+          <p><a href="#">Back to top</a></p>
+      </footer>
+      </html>
+      
